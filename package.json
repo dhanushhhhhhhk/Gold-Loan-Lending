@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "firebase": "^11.9.1",
+    "mongodb": "^6.17.0",
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm start",
+    "frontend": "cd project && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
